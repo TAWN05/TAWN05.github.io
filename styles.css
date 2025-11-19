@@ -1,3 +1,6 @@
+/* ------------------------------
+   Global design tokens
+   ------------------------------ */
 :root {
     --bg: #f5f7fb;
     --surface: #ffffff;
@@ -17,6 +20,9 @@
     padding: 0;
 }
 
+/* ------------------------------
+   Base typography and structure
+   ------------------------------ */
 body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: var(--bg);
@@ -35,6 +41,9 @@ a:focus {
     color: var(--accent);
 }
 
+/* ------------------------------
+   Hero + navigation
+   ------------------------------ */
 .hero {
     padding: 2.5rem clamp(1.5rem, 6vw, 6rem) 3.5rem;
     background: linear-gradient(135deg, #0f172a, #1d4ed8);
@@ -154,6 +163,9 @@ main {
     padding: clamp(1.5rem, 5vw, 4rem);
 }
 
+/* ------------------------------
+   Panel scaffolding reused across sections
+   ------------------------------ */
 .panel {
     background: var(--surface);
     border-radius: 1.5rem;
@@ -193,6 +205,9 @@ main {
     margin-top: 0.75rem;
 }
 
+/* ------------------------------
+   Skills cards
+   ------------------------------ */
 .skills__grid {
     display: grid;
     gap: 1rem;
@@ -216,6 +231,9 @@ main {
     color: var(--text-muted);
 }
 
+/* ------------------------------
+   Project cards
+   ------------------------------ */
 .projects__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -266,6 +284,9 @@ main {
     background: var(--surface);
 }
 
+/* ------------------------------
+   Contact section
+   ------------------------------ */
 .contact__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -326,6 +347,9 @@ main {
     color: var(--text-muted);
 }
 
+/* ------------------------------
+   Footer + responsive tweaks
+   ------------------------------ */
 .site-footer {
     text-align: center;
     padding: 2rem 1rem 3rem;

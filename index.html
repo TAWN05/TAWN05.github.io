@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Casey | AI & Data Systems Portfolio</title>
     <title>Professional Portfolio | Your Name</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Portfolio template scaffolded to match Create Your Portfolio assignment requirements -->
+    <!-- Primary hero banner that introduces the portfolio and provides immediate calls-to-action -->
+    <header class="hero" id="home">
+        <nav class="nav">
+            <a class="logo" href="#home">Jacob Casey</a>
     <header class="hero" id="home">
         <nav class="nav">
             <a class="logo" href="#home">Your Name</a>
@@ -23,6 +29,18 @@
         </nav>
         <div class="hero__content">
             <div>
+                <p class="eyebrow">AI &amp; Data Systems Student</p>
+                <h1>Building Veilscope — explainable AI insights from SEC filings.</h1>
+                <p class="hero__text">
+                    I design Python and LLM-powered pipelines that transform dense Inline XBRL data into transparent
+                    company scorecards for retail investors. Explore my capstone work and reach out if you're hiring AI
+                    engineers who live at the intersection of finance and data systems.
+                </p>
+                <div class="hero__cta">
+                    <a class="btn primary" href="#projects">See Veilscope</a>
+                    <a class="btn secondary" href="#contact">Contact Jacob</a>
+                </div>
+            </div>
                 <p class="eyebrow">Portfolio Template</p>
                 <h1>Showcase your skills, projects, and professional story.</h1>
                 <p class="hero__text">
@@ -42,6 +60,24 @@
     </header>
 
     <main>
+        <!-- About section helps visitors understand who you are and what you are seeking -->
+        <section class="panel" id="about">
+            <div class="panel__header">
+                <p class="eyebrow">About</p>
+                <h2>Jacob Casey · AI &amp; Data Systems Student</h2>
+            </div>
+            <div class="about__grid">
+                <p>
+                    I’m Jacob Casey, a student developer building AI-powered information systems for financial filings.
+                    My capstone, Veilscope, parses SEC 10-K/10-Q data into transparent company scorecards and
+                    plain-English risk insights for retail investors. I love architecting end-to-end workflows—from EDGAR
+                    ingestion and Inline XBRL parsing to LLM-based summarization and investor-facing dashboards.
+                </p>
+                <ul class="about__details">
+                    <li><strong>Location:</strong> Littleton, CO, USA</li>
+                    <li><strong>Email:</strong> <a href="mailto:Jacobrcasey135@gmail.com">Jacobrcasey135@gmail.com</a></li>
+                    <li><strong>Availability:</strong> Open to AI engineering internships and research collaborations</li>
+                    <li><strong>Social Links:</strong> <a href="https://github.com/TAWN05" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/jacob-casey-95a846330" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://www.veilscope.com/" target="_blank" rel="noreferrer">Veilscope</a></li>
         <section class="panel" id="about">
             <div class="panel__header">
                 <p class="eyebrow">About</p>
@@ -62,6 +98,35 @@
             </div>
         </section>
 
+        <!-- Skills section groups technical expertise into digestible categories -->
+        <section class="panel panel--muted" id="skills">
+            <div class="panel__header">
+                <p class="eyebrow">Skills</p>
+                <h2>Data pipelines, Inline XBRL parsing, and explainable AI delivery.</h2>
+            </div>
+            <div class="skills__grid">
+                <article>
+                    <h3>Languages &amp; Frameworks</h3>
+                    <ul>
+                        <li>Python · JavaScript · SQL</li>
+                        <li>FastAPI · Flask · React</li>
+                        <li>HTML · CSS · Tailwind</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>AI &amp; Data Systems</h3>
+                    <ul>
+                        <li>Inline XBRL parsing &amp; EDGAR ingestion</li>
+                        <li>LLM orchestration, prompt design, LangChain</li>
+                        <li>Vector databases: Chroma, Pinecone, FAISS</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Product &amp; Collaboration</h3>
+                    <ul>
+                        <li>Data quality monitoring &amp; observability</li>
+                        <li>Investor-facing storytelling &amp; documentation</li>
+                        <li>Cross-functional collaboration &amp; demos</li>
         <section class="panel panel--muted" id="skills">
             <div class="panel__header">
                 <p class="eyebrow">Skills</p>
@@ -95,6 +160,11 @@
             </div>
         </section>
 
+        <!-- Project cards outline three highlight projects with stacks and links -->
+        <section class="panel" id="projects">
+            <div class="panel__header">
+                <p class="eyebrow">Projects</p>
+                <h2>Veilscope showcases my end-to-end AI engineering skills.</h2>
         <section class="panel" id="projects">
             <div class="panel__header">
                 <p class="eyebrow">Projects</p>
@@ -104,6 +174,22 @@
                 <article class="project">
                     <div class="project__meta">
                         <p class="project__tag">Capstone</p>
+                        <h3>Veilscope AI · SEC Filing Risk Analysis</h3>
+                        <p>
+                            Built an ingestion engine that pulls 10-K/10-Q filings from EDGAR, parses Inline XBRL facts, and
+                            loads cleaned metrics for downstream risk scoring. Automated data quality checks, metric
+                            extraction, and feature prep so explainable AI layers always start with trustworthy data.
+                        </p>
+                    </div>
+                    <ul class="project__stack">
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>PostgreSQL</li>
+                        <li>Inline XBRL</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://www.veilscope.com/" target="_blank" rel="noreferrer">Product Site</a>
+                        <a href="https://github.com/TAWN05" target="_blank" rel="noreferrer">GitHub Repo</a>
                         <h3>Intelligent Tax Research Assistant</h3>
                         <p>
                             Outline your capstone project: goals, your role, and measurable outcomes.
@@ -124,6 +210,23 @@
 
                 <article class="project">
                     <div class="project__meta">
+                        <p class="project__tag">Data Product</p>
+                        <h3>Veilscope Investor Dashboard</h3>
+                        <p>
+                            Designed a responsive web dashboard that turns parsed filing data into company scorecards,
+                            KPI trendlines, and watchlists tailored for retail investors. Focused on clear typography,
+                            responsive cards, and human-readable explanations of each metric.
+                        </p>
+                    </div>
+                    <ul class="project__stack">
+                        <li>React</li>
+                        <li>D3.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Netlify</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://www.veilscope.com/" target="_blank" rel="noreferrer">Live Preview</a>
+                        <a href="https://www.linkedin.com/in/jacob-casey-95a846330" target="_blank" rel="noreferrer">Case Study</a>
                         <p class="project__tag">Personal</p>
                         <h3>Security Automation Toolkit</h3>
                         <p>
@@ -144,6 +247,23 @@
 
                 <article class="project">
                     <div class="project__meta">
+                        <p class="project__tag">AI Research</p>
+                        <h3>Veilscope Explainable Risk Summaries</h3>
+                        <p>
+                            Prototyped an LLM workflow that consumes structured filing facts and returns plain-English risk
+                            summaries with citations back to the SEC documents. Tuned prompts for transparency so users know
+                            exactly which disclosure drove each insight.
+                        </p>
+                    </div>
+                    <ul class="project__stack">
+                        <li>LangChain</li>
+                        <li>OpenAI API</li>
+                        <li>Pinecone</li>
+                        <li>Python</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="https://www.linkedin.com/in/jacob-casey-95a846330" target="_blank" rel="noreferrer">Research Notes</a>
+                        <a href="https://github.com/TAWN05" target="_blank" rel="noreferrer">Source Code</a>
                         <p class="project__tag">Coursework</p>
                         <h3>Full-Stack Learning Portal</h3>
                         <p>
@@ -165,6 +285,11 @@
             </div>
         </section>
 
+        <!-- Contact block provides multiple ways to reach you, including a form placeholder -->
+        <section class="panel panel--muted" id="contact">
+            <div class="panel__header">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s talk about AI + finance opportunities.</h2>
         <section class="panel panel--muted" id="contact">
             <div class="panel__header">
                 <p class="eyebrow">Contact</p>
@@ -173,6 +298,21 @@
             <div class="contact__grid">
                 <div>
                     <p>
+                        The fastest way to reach me is email, but I’m equally active on GitHub and LinkedIn. I’m based in
+                        Littleton, CO and open to remote or hybrid AI engineering roles focused on financial data.
+                    </p>
+                    <ul class="contact__list">
+                        <li><strong>Email:</strong> <a href="mailto:Jacobrcasey135@gmail.com">Jacobrcasey135@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:17205456779">(720) 545-6779</a></li>
+                        <li><strong>Location:</strong> Littleton, CO</li>
+                    </ul>
+                    <div class="contact__socials">
+                        <a href="https://github.com/TAWN05" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/jacob-casey-95a846330" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://www.veilscope.com/" target="_blank" rel="noreferrer">Veilscope</a>
+                    </div>
+                </div>
+                <form class="contact__form" action="mailto:Jacobrcasey135@gmail.com" method="post" enctype="text/plain">
                         Include a direct email link plus professional social profiles. Optional: embed a contact form using
                         services like Formspree or Netlify Forms to keep everything in one place.
                     </p>
@@ -200,6 +340,9 @@
                         <span>Message</span>
                         <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
                     </label>
+                    <input type="hidden" name="subject" value="New inquiry from Jacob's portfolio site">
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <p class="form__note">Submitting will draft an email to Jacob with the subject “New inquiry from Jacob’s portfolio site.”</p>
                     <button type="submit" class="btn primary">Send Message</button>
                     <p class="form__note">Update the form action with your preferred submission service before deploying.</p>
                 </form>
@@ -207,6 +350,14 @@
         </section>
     </main>
 
+    <!-- Persistent footer for legal information and deployment reminders -->
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Jacob Casey. All rights reserved.</p>
+        <p class="small-text">Littleton, CO · Building AI systems for transparent investing.</p>
+    </footer>
+
+    <script>
+        // Accessible mobile navigation toggle
     <footer class="site-footer">
         <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
         <p class="small-text">Replace placeholders with your real details before sharing publicly.</p>
@@ -220,6 +371,7 @@
             navToggle.setAttribute('aria-expanded', !expanded);
             navMenu.classList.toggle('nav__links--open');
         });
+        // Keeps the footer year current without manual updates
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
