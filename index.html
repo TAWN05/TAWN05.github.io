@@ -1,40 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacob's github website</title>
+    <title>Professional Portfolio | Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>this website is dedicated to the work of Jacob Casey</p>
-    <h2>who am I?</h2>
-    <p>I am a high school student at Columbine High School, also a student at Warren Tech’s cyber 
-        security program. I am from Colorado and have lived here my entire life. And a aspireing 
-        Ai engeneer, specialist, and buissness owner.</p>
-        <img src="vectorDatabase.jpg" alt="the ChromaDB image" width="500" height="500" >
-    <h2>What am I working on?</h2>
-    <p>Currently I am working on: 
-        <ol>
-            <li>learning python</li>
-            <li>working with vector databases</li>
-            <li>LLM's(Large language Moldles).</li>
-        </ol>
-        <h2>this is the unordered version of this list</h2>
-        <ul>
-            <li>learning python</li>
-            <li>working with vector databases</li>
-            <li>LLM's(Large language Moldles).</li>
-        </ul>
-        <img src="chromaDB.png" alt="the ChromaDB image" width="200" height="200" >
-    <h2>What Is My first Large Scale Project?</h2>
-    <p>After getting a large technical understanding of LangChain Chroma DB and Olamam opensourse ai
-        me and another class will be making a vector database and ai centered around the US tax code.</p>
-    <h3>Want more information on what im doing currently?</h3>
-    <p>Check me out at medium I publish weekly articals:
-    <a href="https://medium.com/@jacobrcasey135">Look at my medium</a>
-    <a href="home.html">go to my second page</a>
-    <a href="https://Dr-hac.github.io">got to cadens Website    :>  </a>
-    </p>
+    <header class="hero" id="home">
+        <nav class="nav">
+            <a class="logo" href="#home">Your Name</a>
+            <button class="nav__toggle" aria-controls="nav-menu" aria-expanded="false">☰</button>
+            <div class="nav__links" id="nav-menu">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="hero__content">
+            <div>
+                <p class="eyebrow">Portfolio Template</p>
+                <h1>Showcase your skills, projects, and professional story.</h1>
+                <p class="hero__text">
+                    Use this ready-to-customize layout to highlight your bio, experience, and capstone work.
+                    Replace the placeholder content with your personal information when you're ready.
+                </p>
+                <div class="hero__cta">
+                    <a class="btn primary" href="#projects">View Projects</a>
+                    <a class="btn secondary" href="#contact">Get in Touch</a>
+                </div>
+            </div>
+            <figure class="hero__media">
+                <img src="https://via.placeholder.com/420x520.png?text=Professional+Photo" alt="Professional headshot placeholder">
+                <figcaption>Replace with your professional photo.</figcaption>
+            </figure>
+        </div>
+    </header>
+
+    <main>
+        <section class="panel" id="about">
+            <div class="panel__header">
+                <p class="eyebrow">About</p>
+                <h2>Introduce yourself with a confident, professional summary.</h2>
+            </div>
+            <div class="about__grid">
+                <p>
+                    Share a concise bio that covers your background, areas of expertise, and professional goals.
+                    Mention your current school/program, recent accomplishments, and the type of opportunities you are
+                    seeking (internships, apprenticeships, freelance work, etc.). Keep the tone confident and friendly.
+                </p>
+                <ul class="about__details">
+                    <li><strong>Location:</strong> Add your city &amp; state</li>
+                    <li><strong>Email:</strong> youremail@example.com</li>
+                    <li><strong>Availability:</strong> e.g., "Open to internship opportunities for Summer 2025"</li>
+                    <li><strong>Social Links:</strong> GitHub · LinkedIn · Medium · Portfolio assets</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="panel panel--muted" id="skills">
+            <div class="panel__header">
+                <p class="eyebrow">Skills</p>
+                <h2>Spotlight the technologies and disciplines you know best.</h2>
+            </div>
+            <div class="skills__grid">
+                <article>
+                    <h3>Core Technologies</h3>
+                    <ul>
+                        <li>Python · JavaScript · HTML · CSS</li>
+                        <li>Linux / Windows system administration</li>
+                        <li>Version control with Git &amp; GitHub</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Cybersecurity &amp; AI</h3>
+                    <ul>
+                        <li>Network fundamentals &amp; threat modeling</li>
+                        <li>Prompt engineering &amp; LLM workflows</li>
+                        <li>Vector databases (Chroma, Pinecone, FAISS)</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Professional Strengths</h3>
+                    <ul>
+                        <li>Technical documentation &amp; presentation</li>
+                        <li>Cross-functional collaboration</li>
+                        <li>Client communication &amp; mentoring peers</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel" id="projects">
+            <div class="panel__header">
+                <p class="eyebrow">Projects</p>
+                <h2>Feature at least three projects with descriptions, tech stacks, and links.</h2>
+            </div>
+            <div class="projects__grid">
+                <article class="project">
+                    <div class="project__meta">
+                        <p class="project__tag">Capstone</p>
+                        <h3>Intelligent Tax Research Assistant</h3>
+                        <p>
+                            Outline your capstone project: goals, your role, and measurable outcomes.
+                            Explain how you leveraged LLMs with a vector database to surface relevant US tax guidance.
+                        </p>
+                    </div>
+                    <ul class="project__stack">
+                        <li>LangChain</li>
+                        <li>ChromaDB</li>
+                        <li>Python</li>
+                        <li>Azure</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="#">Case Study</a>
+                        <a href="#">GitHub Repo</a>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project__meta">
+                        <p class="project__tag">Personal</p>
+                        <h3>Security Automation Toolkit</h3>
+                        <p>
+                            Describe a toolkit, script collection, or lab project that automates repetitive security tasks.
+                            Focus on the problem solved, tooling, and what you learned while building it.
+                        </p>
+                    </div>
+                    <ul class="project__stack">
+                        <li>Python</li>
+                        <li>PowerShell</li>
+                        <li>API Integrations</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="#">Project Demo</a>
+                        <a href="#">Source Code</a>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project__meta">
+                        <p class="project__tag">Coursework</p>
+                        <h3>Full-Stack Learning Portal</h3>
+                        <p>
+                            Share a web application or coursework project that demonstrates your front-end and back-end skills.
+                            Mention the tech stack, authentication approach, and any unique UX decisions.
+                        </p>
+                    </div>
+                    <ul class="project__stack">
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                    <div class="project__links">
+                        <a href="#">Live Site</a>
+                        <a href="#">Repository</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel panel--muted" id="contact">
+            <div class="panel__header">
+                <p class="eyebrow">Contact</p>
+                <h2>Make it easy for recruiters and collaborators to reach you.</h2>
+            </div>
+            <div class="contact__grid">
+                <div>
+                    <p>
+                        Include a direct email link plus professional social profiles. Optional: embed a contact form using
+                        services like Formspree or Netlify Forms to keep everything in one place.
+                    </p>
+                    <ul class="contact__list">
+                        <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                        <li><strong>Phone:</strong> (555) 123-4567</li>
+                        <li><strong>Location:</strong> City, State</li>
+                    </ul>
+                    <div class="contact__socials">
+                        <a href="https://github.com/your-handle" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://medium.com/@your-handle" target="_blank" rel="noreferrer">Medium</a>
+                    </div>
+                </div>
+                <form class="contact__form" action="#" method="post">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="name@email.com" required>
+                    </label>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="4" placeholder="Tell me about your project" required></textarea>
+                    </label>
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <p class="form__note">Update the form action with your preferred submission service before deploying.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+        <p class="small-text">Replace placeholders with your real details before sharing publicly.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav__toggle');
+        const navMenu = document.getElementById('nav-menu');
+        navToggle.addEventListener('click', () => {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !expanded);
+            navMenu.classList.toggle('nav__links--open');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
