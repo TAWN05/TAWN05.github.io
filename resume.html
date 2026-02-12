@@ -40,18 +40,19 @@
     <main>
         <section class="panel">
             <div class="panel__header">
-                <p class="eyebrow">Preview</p>
-                <h2>In-browser view</h2>
+                <p class="eyebrow">Resume Access</p>
+                <h2>Open or download</h2>
             </div>
             <p style="margin-bottom: 1rem; color: var(--text-muted);">
-                If the preview does not load, use the download button above.
+                Firefox can block embedded Google Docs previews. Use one of the links below.
             </p>
-            <iframe
-                title="Resume preview"
-                src="https://docs.google.com/gview?embedded=1&url=https://tawn05.github.io/assets/Jacob-Casey-Resume.docx"
-                style="width: 100%; min-height: 900px; border: 1px solid var(--border); border-radius: 1rem; background: #fff;"
-                loading="lazy">
-            </iframe>
+            <div class="hero__cta" style="margin-bottom: 1rem;">
+                <a class="btn primary" href="assets/Jacob-Casey-Resume.docx" download>Download .docx</a>
+                <a class="btn primary" href="https://docs.google.com/gview?url=https://tawn05.github.io/assets/Jacob-Casey-Resume.docx" target="_blank" rel="noreferrer">Open in Google Viewer</a>
+            </div>
+            <p style="color: var(--text-muted);">
+                If the Google Viewer link does not load immediately, wait 30-60 seconds for cache refresh after deploy.
+            </p>
         </section>
     </main>
 
